@@ -2,7 +2,9 @@
   "name": "server",
   "packageManager": "yarn@4.9.2",
   "scripts": {
-    "start": "node ./src/app.js"
+    "start": "bun ./src/app.js",
+    "dev": "bun --watch ./src/app.js",
+    "seed": "bun ./src/seed.js"
   },
   "dependencies": {
     "@apollo/server": "^5.0.0",
